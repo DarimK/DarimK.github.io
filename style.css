@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&display=swap");
 
 * {
-    font-family: "Calibri", Calibri, sans-serif;
-    touch-action: pan-y;
+    font-family: "Calibri", Calibri, system-ui, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +19,6 @@
 }
 
 html, body {
-    overflow-x: hidden;
 	color: var(--textMain);
     background-color: var(--background);
     width: 100%;
