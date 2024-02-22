@@ -1,68 +1,98 @@
-body
-{
-	background-color: #171717;
-	color: #DFDFDF;
-	font-family: Calibri, Arial;
-	margin: 0px;
-	padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&display=swap");
+
+* {
+    font-family: "Calibri", Calibri, sans-serif;
+    touch-action: pan-y;
+    margin: 0;
+    padding: 0;
 }
 
-p
-{
-	color: #AAAAAA;
+:root {
+	font-size: 16px;
+	font-size: max(1vw, 8px);
+
+	--background: #171717;
+	--divMain: #000;
+	--textMain: #DFDFDF;
+	--textSecond: #AAA;
+	--buttonMain: #424242;
+	--buttonSecond: #666;
 }
 
-.titleScreen
-{
-	/* Background image settings */
+html, body {
+    overflow-x: hidden;
+	color: var(--textMain);
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+	border-bottom: 0.5rem solid var(--textMain);
+	font-size: 4rem;
+	margin: 2rem 0;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	color: var(--textSecond);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.titleScreen {
 	background-image: url("images/background.png");
-	min-height: 55vh;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
 
+.titleScreen > div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	text-align: center;
-	line-height: 10vh;
-	font-size: 10vw;
+	font-size: 10rem;
 	font-weight: 700;
-	padding-top: 45vh;
 }
 
-.bodyBlock
-{
-	background-color: #171717;
+.bodyBlock {
+	text-align: center;
+	background-color: var(--background);
+	padding: 5rem;
+}
+
+.bodyBlock > h1:first-child {
+	margin-top: 0;
+}
+
+.item {
 	text-align: left;
-	font-size: 50px;
-	font-weight: 500;
-	padding: 10vh;
+	background-color: var(--divMain);
+	border-radius: 0.5rem;
+	margin: 2rem 0;
+	padding: 1rem 2rem;
 }
 
-.item
-{
-	background-color: #000000;
-	text-align: left;
-	font-size: 40px;
-	border-radius: 4px;
-	margin-top: 40px;
-	padding: 16px;
-}
-
-.button
-{
-	background-color: #424242;
-	color: #DFDFDF;
-	font-family: Calibri, Arial;
-	font-size: 25px;
-	border: none;
-	border-radius: 8px;
-	padding: 10px 20px;
-	transition-duration: 0.5s;
+.button {
+	display: inline-block;
 	cursor: pointer;
+	text-decoration: none;
+	color: var(--textMain);
+	background-color: var(--buttonMain);
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	padding: 0.5rem 1rem;
+	transition: background-color 250ms ease;
 }
 
-.button:hover
-{
-	background-color: #666666;
-	padding: 10px 25px;
+.button:hover {
+	background-color: var(--buttonSecond);
 }
