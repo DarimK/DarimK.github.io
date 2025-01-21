@@ -1,2 +1,2 @@
 # darimk.github.io
-<h3>Moved to <https://www.darim.dev/>.</h3>
+<h3>Moved to [darim.dev](https://www.darim.dev/).</h3>
