@@ -1,2 +1,2 @@
-# DarimK.github.io
-<h3>Personal site where I share projects and other stuff.</h3>
+# darimk.github.io
+<h3>Moved to <https://www.darim.dev/>.</h3>
